@@ -1,0 +1,11 @@
+package com.tv;
+
+public class SonyTv implements TvRemote{
+
+	@Override
+	public void power() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

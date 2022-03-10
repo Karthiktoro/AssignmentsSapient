@@ -1,0 +1,23 @@
+package collections.app;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Map<Integer ,Person > personDb = new HashMap<Integer , Person>();
+		personDb.put(100,new Person(100,"Karthik" , "V C"));
+		personDb.put(101, new Person(101, "Rohit", "Sharma"));
+		personDb.put(102, new Person(102, "Virat", "Kohli"));
+		personDb.put(103, new Person(103, "Ravindra", "jadeja"));
+		personDb.put(102, new Person(102, "sachin", "tendulkar"));
+		personDb.put(102, new Person(102, "narendra", "modi"));
+		personDb.put(102, new Person(102, "v", "putin"));
+		personDb.put(102, new Person(102, "v", "zelensky"));
+		personDb.put(102, new Person(102, "bill", "gates"));
+		personDb.put(102, new Person(102, "mark", "zuck"));
+
+	}
+
+}

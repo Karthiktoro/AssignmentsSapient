@@ -1,0 +1,17 @@
+package com.pratice;
+
+public class MyString3 {
+
+	public static void main(String[] args) {
+		String s1 = "Our java class is now suspended for next 30mins as we have a meeting for java progress";
+		String[] s2 = s1.split(" ");
+		for(String item : s2) {
+			if(item == "java") {
+				System.out.println(item);
+			}
+		}
+	
+		
+	}
+
+}

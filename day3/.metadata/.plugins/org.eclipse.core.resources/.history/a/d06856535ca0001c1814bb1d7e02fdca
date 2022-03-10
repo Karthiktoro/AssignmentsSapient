@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+        stage("checkout"){
+            steps{
+               bat "git clone https://github.com/Karthiktoro/jenkins-demo2.git"
+            }
+        }
+        stage("compile"){
+            steps{
+            bat "mvn clean compile"
+            }
+        }
+        
+         stage("package"){
+            steps{
+            bat "mvn package"
+            }
+        }
+       
+        }
+    }
+    
+   
+

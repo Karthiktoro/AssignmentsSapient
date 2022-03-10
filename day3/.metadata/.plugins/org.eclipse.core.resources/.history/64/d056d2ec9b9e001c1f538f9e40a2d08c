@@ -1,0 +1,15 @@
+package com.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class SelectQueryExample {
+
+	public static void main(String[] args) throws Exception{
+		Class.forName("org.mariadb.jdbc.Driver");
+		
+		Connection conn = DriverManager.getConnection("dbc:mariadb://localhost:3306/sapientdb", "root", "root");
+
+	}
+
+}

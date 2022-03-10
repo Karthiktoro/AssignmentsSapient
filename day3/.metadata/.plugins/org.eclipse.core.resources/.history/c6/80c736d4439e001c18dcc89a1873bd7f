@@ -1,0 +1,17 @@
+package assigmentday7;
+
+public class MyBank {
+	private int customerId;
+	private String name;
+	private String address;
+	private int accountBalance;
+	
+	public MyBank(int CustomerId , String name , String address , int accountBalance) {
+		this.accountBalance = accountBalance;
+		this.name = name;
+		this.address = address;
+		this.customerId = customerId;
+	}
+	
+	
+}

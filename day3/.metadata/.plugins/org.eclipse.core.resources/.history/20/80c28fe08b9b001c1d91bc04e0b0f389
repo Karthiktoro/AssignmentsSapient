@@ -1,0 +1,12 @@
+package com.threads;
+
+public class Main {
+	public static void main(String[] args) throws InterruptedException {
+		MyThread t = new MyThread("res1","good");
+		
+		
+		s.start();
+		s.join();
+
+	}
+}

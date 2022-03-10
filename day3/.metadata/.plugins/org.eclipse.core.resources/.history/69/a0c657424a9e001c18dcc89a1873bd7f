@@ -1,0 +1,57 @@
+package assigmentday7;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class MyBankMain {
+	 Map<Integer, MyBank> m ;
+	void fill() {
+		m= new HashMap<Integer, MyBank>();
+		
+		m.put(101, new MyBank(101, "karthik", "HAssaN", 100));
+		m.put(102, new MyBank(102, "madhan", "HAssaN", 300));
+		m.put(103, new MyBank(103, "suku", "HAssaN", 500));
+		m.put(104, new MyBank(104, "modi", "HAssaN", 600));
+		m.put(105, new MyBank(105, "gowdru", "HAssaN", 700));
+		
+	}
+
+	public String getInfo(int customerId) {
+		if( m.containsKey(customerId)) {
+			return m.get(customerId).getDetails();
+		}else {
+			return "nothing";
+		}}
+		
+		//String setInfo(int customerId1) {
+			//if(m.containsKey(customerId1)) {
+				//return "present";
+			//}else {
+				//m.put(customerId1 , new MyBank(customerId1,name , address, accountBalance));
+			//}
+		//}
+		
+	public List<String> getDe(int amount){
+		List<String> l = new ArrayList<String>();
+		Set<Integer> s = new HashSet<>();
+		
+		for(Integer item : s) {
+			MyBank k = m.get(item);
+			if(amount>=500) {
+				k.getDetails();
+			}
+		}
+		return l;
+	}
+	
+	public static void main(String[] args) {
+		
+		MyBankMain b = new MyBankMain();
+		b.getInfo(101);
+		b.getDe(500);
+	}
+}

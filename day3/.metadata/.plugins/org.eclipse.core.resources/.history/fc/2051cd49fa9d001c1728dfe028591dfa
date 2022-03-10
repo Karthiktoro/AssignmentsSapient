@@ -1,0 +1,16 @@
+package collections.app;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Map<Integer ,Person > PersonDb = new HashMap<Integer , Person>();
+		PersonDb(100,new Person(100,"Karthik" , "V C"));
+		
+		
+
+	}
+
+}

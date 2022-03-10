@@ -1,0 +1,19 @@
+package com.exceptionHandling;
+
+public class MainDemo1 {
+
+	public static void main(String[] args) {
+		MyDemo1 d = new MyDemo1();
+		d.start();
+		try {
+			d.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		d.run();
+		
+
+	}
+
+}

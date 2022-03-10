@@ -1,0 +1,13 @@
+package com.pratice;
+
+public class MyString3 {
+
+	public static void main(String[] args) {
+		String s1 = "Our java class is now suspended for next 30mins as we have a meeting for java progress";
+		s1 = s1.split(" ");
+		for(String s : s1) {
+			System.out.println(s);
+		}
+	}
+
+}

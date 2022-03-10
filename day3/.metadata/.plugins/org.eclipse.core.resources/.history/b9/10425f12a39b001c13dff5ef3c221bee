@@ -1,0 +1,19 @@
+package com.pratice;
+
+public class MyString3 {
+
+	public static void main(String[] args) {
+		StringBuilder sb= new StringBuilder();
+		sb.append("Shantanu").append(" Banerjee").append(" Hyderabad ").append(500058);
+		
+		System.out.println(sb);
+		
+		sb.replace(0, 17,"Karthik").replace(18, 28,"bangalore").replace(29, 34, "vckd"));
+	
+		System.out.println(sb);
+	}
+	
+		
+	}
+
+

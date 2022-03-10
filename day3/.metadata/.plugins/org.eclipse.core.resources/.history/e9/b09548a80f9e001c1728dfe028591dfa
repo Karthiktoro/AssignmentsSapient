@@ -1,0 +1,36 @@
+package collections.app;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Main {
+
+		public String findPerson(int personId) {
+			if(personDb.containsKey(personId)) {
+				return personDb.get(personId).getDetails();
+			}else {
+				return "nothing";
+			}
+		}
+		
+		
+		public static List<String> listPersonByCity(String cityName){
+			
+			
+			
+			return null;
+			
+			
+		}
+		
+		public static void main(String[] args) {	
+
+			String city = "Hyderabad";
+			Main p = new Main();
+			System.out.println(p.findPerson(101));
+			System.out.println(p.listPersonByCity("bangalore"));
+			
+	}
+
+}

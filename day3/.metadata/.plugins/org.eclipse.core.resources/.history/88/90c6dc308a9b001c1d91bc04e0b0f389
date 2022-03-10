@@ -1,0 +1,13 @@
+package com.threads;
+
+
+
+public class MyThread implements Runnable{
+
+	
+	@Override
+	public void run() {
+		Resource r = new Resource();
+		r.printMessage("whats up");
+	}
+}
