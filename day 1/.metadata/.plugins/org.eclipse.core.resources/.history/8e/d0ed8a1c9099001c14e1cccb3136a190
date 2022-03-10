@@ -1,0 +1,11 @@
+package com.handson.one;
+
+public class Vehicle {
+
+	public static void main(String[] args) {
+		Car ref = new Car();
+		System.out.println(ref.color);
+
+	}
+
+}

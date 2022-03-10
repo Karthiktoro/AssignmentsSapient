@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.handson.one;
+
+
+public class MethodOverloading {
+
+	public void hello(int i) {
+		System.out.println("output int "+i);
+	}
+	
+	public void hello(byte i) {
+		System.out.println("output byte "+i);
+	}
+	
+	public void hello(short i) {
+		System.out.println("output short"+i);
+	}
+	
+	public void hello(long i) {
+		System.out.println("output long "+i);
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		//hello(int i), hello(byte i) hello(short i), hello(long i)
+		//when you call hello(5) which method is called & why.
+		MethodOverloading ref =new MethodOverloading();
+		ref.hello(5);
+		
+		
+	}
+
+}
